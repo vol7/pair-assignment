@@ -1,0 +1,9 @@
+{
+  "extends": "@repo/typescript-config/node.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "declaration": false,
+    "declarationMap": false
+  }
+}

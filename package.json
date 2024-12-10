@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint -- --no-warn-ignored",
+    "type-check": "turbo type-check --",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md}\"",
+    "dev:frontend": "turbo dev --filter={@repo/frontend,@repo/ui}",
+    "build:frontend": "turbo build --filter={@repo/frontend,@repo/ui}",
+    "dev:backend": "turbo dev --filter=@repo/backend",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "turbo": "^2.3.3"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.37.0"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  },
+  "name": "v7-pair-assignment"
+}
